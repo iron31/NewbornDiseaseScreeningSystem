@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5AE443E8-C96A-47A7-B8E9-390A18F3A367}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Newborn_Disease_Screening_System</RootNamespace>
+    <AssemblyName>Newborn Disease Screening System</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v10.2.Core, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Charts.v10.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Data.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v10.2.Core, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.PivotGrid.v10.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Utils.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraBars.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraCharts.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v10.2.UI, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraCharts.v10.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraEditors.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraGrid.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraLayout.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraNavBar.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraPivotGrid.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraPrinting.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraReports.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v10.2.Extensions, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraReports.v10.2.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraTreeList.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraVerticalGrid.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="FirebirdSql.Data.FirebirdClient, Version=2.5.1.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+    </Reference>
+    <Reference Include="FirebirdSql.Data.UnitTests, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\FirebirdSql.Data.UnitTests.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq">
+      <HintPath>..\..\..\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="DA\DataAccess.cs" />
+    <Compile Include="DA\Sql.cs" />
+    <Compile Include="Entity\GmOrganization.cs" />
+    <Compile Include="Entity\NbDiseaseScreeningCard.cs" />
+    <Compile Include="Entity\NbFirstScreening.cs" />
+    <Compile Include="DA\FBDBHelp.cs" />
+    <Compile Include="DA\FBSqlHelper.cs" />
+    <Compile Include="Entity\NbSecondSceening.cs" />
+    <Compile Include="Entity\NbStandardValues.cs" />
+    <Compile Include="Forms\FormAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddUser.Designer.cs">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormChangePassword.Designer.cs">
+      <DependentUpon>FormChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\GmUser.cs" />
+    <Compile Include="Forms\FormEditCardNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormEditCardNo.Designer.cs">
+      <DependentUpon>FormEditCardNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormUpdateParams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormUpdateParams.Designer.cs">
+      <DependentUpon>FormUpdateParams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormUpdateStandard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormUpdateStandard.Designer.cs">
+      <DependentUpon>FormUpdateStandard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormUpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormUpdateUser.Designer.cs">
+      <DependentUpon>FormUpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\ReportView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\ReportView.Designer.cs">
+      <DependentUpon>ReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptFirstResult.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptFirstResult.Designer.cs">
+      <DependentUpon>RptFirstResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptFirstReturn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptFirstReturn.Designer.cs">
+      <DependentUpon>RptFirstReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptRemind.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptRemind.Designer.cs">
+      <DependentUpon>RptRemind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptWorkLoad.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptWorkLoad.Designer.cs">
+      <DependentUpon>RptWorkLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCAddOrUpdateFirstResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCAddOrUpdateFirstResult.Designer.cs">
+      <DependentUpon>UCAddOrUpdateFirstResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCAddOrUpdateCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCAddOrUpdateCard.Designer.cs">
+      <DependentUpon>UCAddOrUpdateCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCAddOrUpdateOrganization.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCAddOrUpdateOrganization.Designer.cs">
+      <DependentUpon>UCAddOrUpdateOrganization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCAddOrUpdateSecondResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCAddOrUpdateSecondResult.Designer.cs">
+      <DependentUpon>UCAddOrUpdateSecondResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCCardInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCCardInfo.Designer.cs">
+      <DependentUpon>UCCardInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCFirstStatistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCFirstStatistics.Designer.cs">
+      <DependentUpon>UCFirstStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCFirstResultInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCFirstResultInfo.Designer.cs">
+      <DependentUpon>UCFirstResultInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCFirstResultReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCFirstResultReport.Designer.cs">
+      <DependentUpon>UCFirstResultReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCFirstStatisticsResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCFirstStatisticsResult.Designer.cs">
+      <DependentUpon>UCFirstStatisticsResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCObjectQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCObjectQuery.Designer.cs">
+      <DependentUpon>UCObjectQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCObjectQueryResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCObjectQueryResult.Designer.cs">
+      <DependentUpon>UCObjectQueryResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCOrganizationInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCOrganizationInfo.Designer.cs">
+      <DependentUpon>UCOrganizationInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCParamsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCParamsControl.Designer.cs">
+      <DependentUpon>UCParamsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCRemind.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCRemind.Designer.cs">
+      <DependentUpon>UCRemind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCSecondResultReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCSecondResultReport.Designer.cs">
+      <DependentUpon>UCSecondResultReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCSecondStatistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCSecondStatistics.Designer.cs">
+      <DependentUpon>UCSecondStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCSecondResultInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCSecondResultInfo.Designer.cs">
+      <DependentUpon>UCSecondResultInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCSecondStatisticsResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCSecondStatisticsResult.Designer.cs">
+      <DependentUpon>UCSecondStatisticsResult.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormAddUser.resx">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormEditCardNo.resx">
+      <DependentUpon>FormEditCardNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormUpdateParams.resx">
+      <DependentUpon>FormUpdateParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormUpdateStandard.resx">
+      <DependentUpon>FormUpdateStandard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormUpdateUser.resx">
+      <DependentUpon>FormUpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report\ReportView.resx">
+      <DependentUpon>ReportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptFirstResult.resx">
+      <DependentUpon>RptFirstResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptFirstReturn.resx">
+      <DependentUpon>RptFirstReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptRemind.resx">
+      <DependentUpon>RptRemind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptWorkLoad.resx">
+      <DependentUpon>RptWorkLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCAddOrUpdateFirstResult.resx">
+      <DependentUpon>UCAddOrUpdateFirstResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCAddOrUpdateCard.resx">
+      <DependentUpon>UCAddOrUpdateCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCAddOrUpdateOrganization.resx">
+      <DependentUpon>UCAddOrUpdateOrganization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCAddOrUpdateSecondResult.resx">
+      <DependentUpon>UCAddOrUpdateSecondResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCCardInfo.resx">
+      <DependentUpon>UCCardInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCFirstStatistics.resx">
+      <DependentUpon>UCFirstStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCFirstResultInfo.resx">
+      <DependentUpon>UCFirstResultInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCFirstResultReport.resx">
+      <DependentUpon>UCFirstResultReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCFirstStatisticsResult.resx">
+      <DependentUpon>UCFirstStatisticsResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCObjectQuery.resx">
+      <DependentUpon>UCObjectQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCObjectQueryResult.resx">
+      <DependentUpon>UCObjectQueryResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCOrganizationInfo.resx">
+      <DependentUpon>UCOrganizationInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCParamsControl.resx">
+      <DependentUpon>UCParamsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCRemind.resx">
+      <DependentUpon>UCRemind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCSecondResultReport.resx">
+      <DependentUpon>UCSecondResultReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCSecondStatistics.resx">
+      <DependentUpon>UCSecondStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCSecondResultInfo.resx">
+      <DependentUpon>UCSecondResultInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UCSecondStatisticsResult.resx">
+      <DependentUpon>UCSecondStatisticsResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewBown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainBackImage.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
