@@ -1385,5 +1385,44 @@ namespace Newborn_Disease_Screening_System.UC
             }
             return exists;
         }
+
+        private void cbQualiFiedTSH1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbQualiFiedTSH1.SelectedIndex == 1)
+            {
+                cbReasonTSH1.Enabled = true;
+            }
+            else
+            {
+                cbReasonTSH1.Enabled = false;
+                cbReasonTSH1.EditValue = null;
+            }
+        }
+
+        private void cbQualiFiedPHE1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbQualiFiedPHE1.SelectedIndex == 1)
+            {
+                cbReasonPHE1.Enabled = true;
+            }
+            else
+            {
+                cbReasonPHE1.Enabled = false;
+                cbReasonPHE1.EditValue = null;
+            }
+        }
+
+        private void cbQualiFiedG6PD1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbQualiFiedG6PD1.SelectedIndex == 1)
+            {
+                cbReasonG6PD1.Enabled = true;
+            }
+            else
+            {
+                cbReasonG6PD1.Enabled = false;
+                cbReasonG6PD1.EditValue = null;
+            }
+        }
     }
 }

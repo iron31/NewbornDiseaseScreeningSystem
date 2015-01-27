@@ -474,6 +474,7 @@
             // cbReasonTSH1
             // 
             this.cbReasonTSH1.EditValue = "";
+            this.cbReasonTSH1.Enabled = false;
             this.cbReasonTSH1.Location = new System.Drawing.Point(417, 108);
             this.cbReasonTSH1.Name = "cbReasonTSH1";
             this.cbReasonTSH1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -765,6 +766,7 @@
             this.cbQualiFiedTSH1.Name = "cbQualiFiedTSH1";
             this.cbQualiFiedTSH1.Size = new System.Drawing.Size(150, 22);
             this.cbQualiFiedTSH1.TabIndex = 6;
+            this.cbQualiFiedTSH1.SelectedIndexChanged += new System.EventHandler(this.cbQualiFiedTSH1_SelectedIndexChanged);
             this.cbQualiFiedTSH1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cbQualiFiedTSH1_KeyUp);
             // 
             // label35
@@ -1322,6 +1324,7 @@
             // cbReasonPHE1
             // 
             this.cbReasonPHE1.EditValue = "";
+            this.cbReasonPHE1.Enabled = false;
             this.cbReasonPHE1.Location = new System.Drawing.Point(417, 108);
             this.cbReasonPHE1.Name = "cbReasonPHE1";
             this.cbReasonPHE1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -1500,6 +1503,7 @@
             this.cbQualiFiedPHE1.Name = "cbQualiFiedPHE1";
             this.cbQualiFiedPHE1.Size = new System.Drawing.Size(150, 22);
             this.cbQualiFiedPHE1.TabIndex = 6;
+            this.cbQualiFiedPHE1.SelectedIndexChanged += new System.EventHandler(this.cbQualiFiedPHE1_SelectedIndexChanged);
             this.cbQualiFiedPHE1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cbQualiFiedPHE1_KeyUp);
             // 
             // label15
@@ -2004,6 +2008,7 @@
             // cbReasonG6PD1
             // 
             this.cbReasonG6PD1.EditValue = "";
+            this.cbReasonG6PD1.Enabled = false;
             this.cbReasonG6PD1.Location = new System.Drawing.Point(417, 108);
             this.cbReasonG6PD1.Name = "cbReasonG6PD1";
             this.cbReasonG6PD1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -2182,6 +2187,7 @@
             this.cbQualiFiedG6PD1.Name = "cbQualiFiedG6PD1";
             this.cbQualiFiedG6PD1.Size = new System.Drawing.Size(150, 22);
             this.cbQualiFiedG6PD1.TabIndex = 6;
+            this.cbQualiFiedG6PD1.SelectedIndexChanged += new System.EventHandler(this.cbQualiFiedG6PD1_SelectedIndexChanged);
             this.cbQualiFiedG6PD1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cbQualiFiedG6PD1_KeyUp);
             // 
             // label18

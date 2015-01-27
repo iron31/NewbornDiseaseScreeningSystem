@@ -83,3 +83,42 @@ G:\Newborn Disease Screening System\Newborn Disease Screening System\Newborn Dis
 G:\Newborn Disease Screening System\Newborn Disease Screening System\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.UC.UCRemind.resources
 G:\Newborn Disease Screening System\Newborn Disease Screening System\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.Report.RptFirstReturn.resources
 G:\Newborn Disease Screening System\Newborn Disease Screening System\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.UC.UCFirstStatisticsResult.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\bin\Debug\Newborn Disease Screening System.exe.config
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn Disease Screening System.exe
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn Disease Screening System.pdb
+E:\zhaoliang\NDSS\Newborn Disease Screening System\bin\Debug\Newborn Disease Screening System.exe
+E:\zhaoliang\NDSS\Newborn Disease Screening System\bin\Debug\Newborn Disease Screening System.pdb
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn Disease Screening System.csprojResolveAssemblyReference.cache
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.Forms.FormAddUser.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.Forms.FormEditCardNo.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.Forms.FormUpdateParams.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.Forms.FormUpdateStandard.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.Forms.FormUpdateUser.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.Forms.LogIn.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.Forms.MainForm.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.Properties.Resources.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.Report.ReportView.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.Report.RptFirstResult.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.Report.RptFirstReturn.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.Report.RptRemind.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.Report.RptWorkLoad.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.UC.UCAddOrUpdateFirstResult.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.UC.UCAddOrUpdateCard.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.UC.UCAddOrUpdateOrganization.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.UC.UCAddOrUpdateSecondResult.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.UCCardInfo.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.UC.UCFirstStatistics.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.UCFirstResultInfo.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.UC.UCFirstResultReport.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.UC.UCFirstStatisticsResult.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.UC.UCObjectQuery.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.UC.UCObjectQueryResult.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.UCOrganizationInfo.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.UC.UCParamsControl.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.UC.UCRemind.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.UC.UCSecondResultReport.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.UC.UCSecondStatistics.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.UC.UCSecondResultInfo.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.UC.UCSecondStatisticsResult.resources
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn Disease Screening System.csproj.GenerateResource.Cache
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn Disease Screening System.exe.licenses
