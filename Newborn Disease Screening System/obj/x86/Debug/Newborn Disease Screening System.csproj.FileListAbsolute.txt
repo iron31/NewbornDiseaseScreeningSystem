@@ -88,7 +88,6 @@ E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn Disease
 E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn Disease Screening System.pdb
 E:\zhaoliang\NDSS\Newborn Disease Screening System\bin\Debug\Newborn Disease Screening System.exe
 E:\zhaoliang\NDSS\Newborn Disease Screening System\bin\Debug\Newborn Disease Screening System.pdb
-E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn Disease Screening System.csprojResolveAssemblyReference.cache
 E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.Forms.FormAddUser.resources
 E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.Forms.FormEditCardNo.resources
 E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.Forms.FormUpdateParams.resources

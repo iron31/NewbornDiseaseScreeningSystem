@@ -210,7 +210,7 @@ namespace Newborn_Disease_Screening_System.Forms
                     button5.Enabled =
                     button6.Enabled =
                     button7.Enabled =
-                    button8.Enabled =
+                    //button8.Enabled =
                 btnCardInfo.Enabled = false;
             }
             else
@@ -227,7 +227,7 @@ namespace Newborn_Disease_Screening_System.Forms
                    button5.Enabled =
                    button6.Enabled =
                    button7.Enabled =
-                   button8.Enabled =
+                  // button8.Enabled =
                 btnCardInfo.Enabled = true;
             }
         }
@@ -393,6 +393,12 @@ namespace Newborn_Disease_Screening_System.Forms
             UCRemind firstreturn = new UCRemind(tc, "firstreturn");
             DA.DataAccess.addTabPage("FirstReturn", "FirstReturn", firstreturn, tc);
             tc.SelectedTab = tc.TabPages["FirstReturn"];
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            DA.DataAccess.removeTabPage(tc.SelectedTab.Name, tc);
+            tc.SelectedTab = tc.TabPages["tbMainPage"];
         }
 
         

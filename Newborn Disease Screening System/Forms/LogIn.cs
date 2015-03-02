@@ -111,6 +111,11 @@ namespace Newborn_Disease_Screening_System.Forms
                         return;
                     }
                 }
+                if(!date())
+                {
+                    MessageBox.Show("有效期已过,请联系管理员!");
+                    return;
+                }
                 MessageBox.Show("登录成功!");
                 //Thread thread = new Thread(new ThreadStart(FormStart));//这里可能有人看不懂，ThreadStart方法参数是上面那个方法名，对方法被作为参数了，如果你看过委托就会了，当然这里不是讨论委托。
                 //thread.Start();//定义1个线程；执行FormsStrat函数；
@@ -165,6 +170,17 @@ namespace Newborn_Disease_Screening_System.Forms
                 throw;
             }
             return false;   
+        }
+
+        private bool date()
+        {
+            DateTime dt = System.DateTime.Today;
+            DateTime date=DateTime.Parse("2015-04-01");
+            if(dt<date)
+            {
+                return true;
+            }
+           return false;
         }
         #endregion
 

@@ -38,7 +38,6 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -48,7 +47,6 @@
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -101,7 +99,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
@@ -138,7 +135,6 @@
             this.layoutControl1.Controls.Add(this.btnExit);
             this.layoutControl1.Controls.Add(this.button1);
             this.layoutControl1.Controls.Add(this.button5);
-            this.layoutControl1.Controls.Add(this.button8);
             this.layoutControl1.Controls.Add(this.button3);
             this.layoutControl1.Controls.Add(this.button7);
             this.layoutControl1.Controls.Add(this.button6);
@@ -200,12 +196,13 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(839, 4);
+            this.button2.Location = new System.Drawing.Point(800, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(66, 42);
+            this.button2.Size = new System.Drawing.Size(105, 42);
             this.button2.TabIndex = 12;
             this.button2.Text = "医疗机构管理";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.tsOrganization_Click);
             // 
             // btnExit
             // 
@@ -217,7 +214,7 @@
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "返回";
             this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.tsExit_Click);
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // button1
             // 
@@ -228,6 +225,7 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "系统表管理";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.tsParams_Click);
             // 
             // button5
             // 
@@ -240,25 +238,16 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.tsQueryObject_Click);
             // 
-            // button8
-            // 
-            this.button8.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button8.Location = new System.Drawing.Point(719, 4);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(56, 42);
-            this.button8.TabIndex = 8;
-            this.button8.Text = "更改密码";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.Location = new System.Drawing.Point(779, 4);
+            this.button3.Location = new System.Drawing.Point(719, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(56, 42);
+            this.button3.Size = new System.Drawing.Size(77, 42);
             this.button3.TabIndex = 6;
             this.button3.Text = "添加用户";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.tsAddUser_Click);
             // 
             // button7
             // 
@@ -325,7 +314,6 @@
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1,
             this.layoutControlItem2,
-            this.layoutControlItem3,
             this.layoutControlItem5,
             this.layoutControlItem6,
             this.layoutControlItem7,
@@ -370,18 +358,6 @@
             this.layoutControlItem2.TextToControlDistance = 0;
             this.layoutControlItem2.TextVisible = false;
             // 
-            // layoutControlItem3
-            // 
-            this.layoutControlItem3.Control = this.button8;
-            this.layoutControlItem3.CustomizationFormText = "layoutControlItem3";
-            this.layoutControlItem3.Location = new System.Drawing.Point(715, 0);
-            this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(60, 46);
-            this.layoutControlItem3.Text = "layoutControlItem3";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem3.TextToControlDistance = 0;
-            this.layoutControlItem3.TextVisible = false;
-            // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.btnCardInfo;
@@ -422,9 +398,9 @@
             // 
             this.layoutControlItem9.Control = this.button3;
             this.layoutControlItem9.CustomizationFormText = "layoutControlItem9";
-            this.layoutControlItem9.Location = new System.Drawing.Point(775, 0);
+            this.layoutControlItem9.Location = new System.Drawing.Point(715, 0);
             this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(60, 46);
+            this.layoutControlItem9.Size = new System.Drawing.Size(81, 46);
             this.layoutControlItem9.Text = "layoutControlItem9";
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem9.TextToControlDistance = 0;
@@ -470,9 +446,9 @@
             // 
             this.layoutControlItem11.Control = this.button2;
             this.layoutControlItem11.CustomizationFormText = "layoutControlItem11";
-            this.layoutControlItem11.Location = new System.Drawing.Point(835, 0);
+            this.layoutControlItem11.Location = new System.Drawing.Point(796, 0);
             this.layoutControlItem11.Name = "layoutControlItem11";
-            this.layoutControlItem11.Size = new System.Drawing.Size(70, 46);
+            this.layoutControlItem11.Size = new System.Drawing.Size(109, 46);
             this.layoutControlItem11.Text = "layoutControlItem11";
             this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem11.TextToControlDistance = 0;
@@ -732,6 +708,7 @@
             this.tsChangePassword.Name = "tsChangePassword";
             this.tsChangePassword.Size = new System.Drawing.Size(176, 26);
             this.tsChangePassword.Text = "更改密码";
+            this.tsChangePassword.Visible = false;
             this.tsChangePassword.Click += new System.EventHandler(this.tsChangePassword_Click);
             // 
             // tsAddUser
@@ -837,7 +814,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
@@ -869,7 +845,6 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TabPage tbMainPage;
         private System.Windows.Forms.TabControl MainTabControl;
@@ -877,7 +852,6 @@
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
