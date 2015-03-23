@@ -1009,43 +1009,49 @@ namespace Newborn_Disease_Screening_System.UC
                         case "TSH1":
                             cbWashTSH1.SelectedIndex = 0;
                             lblMotherNameTSH1.Text = lblGenderTSH1.Text = lblCardCodeTSH1.Text = lblOrganizationTSH1.Text = lblIllCaseNoTSH1.Text =
-                            txtFirstSenderTSH1.Text = txtSecondSenderTSH1.Text =
-                            deCheckDateTSH1.Text = txtTSH1.Text = txtResultTSH1.Text =
+                            //txtFirstSenderTSH1.Text = txtSecondSenderTSH1.Text =
+                            //deCheckDateTSH1.Text = 
+                            txtTSH1.Text = txtResultTSH1.Text =
                             string.Empty;
                             //btnSaveTSH1.Enabled = false;
                             break;
                         case "TSH2":
                             lblMotherNameTSH2.Text = lblGenderTSH2.Text = lblCardCodeTSH2.Text = lblOrganizationTSH2.Text = lblIllCaseNoTSH2.Text = lblAVGTSH2.Text =
-                            txtFirstSenderTSH2.Text = txtSecondSenderTSH2.Text =
-                            deCheckDateTSH2.Text = txtTSH2_1.Text = txtTSH2_2.Text = txtResultTSH2.Text =
+                            //txtFirstSenderTSH2.Text = txtSecondSenderTSH2.Text =
+                            //deCheckDateTSH2.Text = 
+                            txtTSH2_1.Text = txtTSH2_2.Text = txtResultTSH2.Text =
                             string.Empty;
                             //btnSaveTSH2.Enabled = false;
                             break;
                         case "PHE1":
                             lblMotherNamePHE1.Text = lblGenderPHE1.Text = lblCardCodePHE1.Text = lblOrganizationPHE1.Text = lblIllCaseNoPHE1.Text =
-                            txtFirstSenderPHE1.Text = txtSecondSenderPHE1.Text =
-                            deCheckDatePHE1.Text = txtPHE1.Text = txtResultPHE1.Text =
+                            //txtFirstSenderPHE1.Text = txtSecondSenderPHE1.Text =
+                            //deCheckDatePHE1.Text = 
+                            txtPHE1.Text = txtResultPHE1.Text =
                             string.Empty;
                             //btnSavePHE1.Enabled = false;
                             break;
                         case "PHE2":
                             lblMotherNamePHE2.Text = lblGenderPHE2.Text = lblCardCodePHE2.Text = lblOrganizationPHE2.Text = lblIllCaseNoPHE2.Text = lblAVGPHE2.Text =
-                            txtFirstSenderPHE2.Text = txtSecondSenderPHE2.Text =
-                            deCheckDatePHE2.Text = txtPHE2_1.Text = txtPHE2_2.Text = txtResultPHE2.Text =
+                            //txtFirstSenderPHE2.Text = txtSecondSenderPHE2.Text =
+                            //deCheckDatePHE2.Text = 
+                            txtPHE2_1.Text = txtPHE2_2.Text = txtResultPHE2.Text =
                             string.Empty;
                             //btnSavePHE2.Enabled = false;
                             break;
                         case "G6PD1":
                             lblMotherNameG6PD1.Text = lblGenderG6PD1.Text = lblCardCodeG6PD1.Text = lblOrganizationG6PD1.Text = lblIllCaseNoG6PD1.Text =
-                            txtFirstSenderG6PD1.Text = txtSecondSenderG6PD1.Text =
-                            deCheckDateG6PD1.Text = txtG6PD1.Text = txtResultG6PD1.Text =
+                            //txtFirstSenderG6PD1.Text = txtSecondSenderG6PD1.Text =
+                            //deCheckDateG6PD1.Text = 
+                            txtG6PD1.Text = txtResultG6PD1.Text =
                             string.Empty;
                             //btnSaveG6PD1.Enabled = false;
                             break;
                         case "G6PD2":
                             lblMotherNameG6PD2.Text = lblGenderG6PD2.Text = lblCardCodeG6PD2.Text = lblOrganizationG6PD2.Text = lblIllCaseNoG6PD2.Text = lblAVGG6PD2.Text =
-                            txtFirstSenderG6PD2.Text = txtSecondSenderG6PD2.Text =
-                            deCheckDateG6PD2.Text = txtG6PD2_1.Text = txtG6PD2_2.Text = txtResultG6PD2.Text =
+                            //txtFirstSenderG6PD2.Text = txtSecondSenderG6PD2.Text =
+                            //deCheckDateG6PD2.Text = 
+                            txtG6PD2_1.Text = txtG6PD2_2.Text = txtResultG6PD2.Text =
                             string.Empty;
                             //btnSaveG6PD2.Enabled = false;
                             break;
@@ -1215,7 +1221,15 @@ namespace Newborn_Disease_Screening_System.UC
         {
             if (e.KeyCode == Keys.Enter)
             {
-                this.txtFirstSenderTSH1.Focus();
+                if (string.IsNullOrEmpty(txtFirstSenderTSH1.Text))
+                {
+                    this.txtFirstSenderTSH1.Focus();
+                }
+                else
+                {
+                    txtTSH1.Focus();
+                }
+                
             }
         }
         
@@ -1253,7 +1267,7 @@ namespace Newborn_Disease_Screening_System.UC
 
         private void txtTSH1_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter&&!string.IsNullOrEmpty(txtTSH1.Text))
             {
                 this.btnSaveTSH1.Focus();
             }
@@ -1359,7 +1373,15 @@ namespace Newborn_Disease_Screening_System.UC
         {
             if (e.KeyCode == Keys.Enter)
             {
-                this.txtFirstSenderTSH2.Focus();
+                if (string.IsNullOrEmpty(txtFirstSenderTSH2.Text))
+                {
+                    this.txtFirstSenderTSH2.Focus();
+                }
+                else
+                {
+                    this.txtTSH2_1.Focus();
+                }
+               
             }
         }
 
@@ -1389,7 +1411,7 @@ namespace Newborn_Disease_Screening_System.UC
 
         private void txtTSH2_1_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter&&!string.IsNullOrEmpty(txtTSH2_1.Text))
             {
                 this.txtTSH2_2.Focus();
             }
@@ -1489,7 +1511,15 @@ namespace Newborn_Disease_Screening_System.UC
         {
             if (e.KeyCode == Keys.Enter)
             {
-                this.txtFirstSenderPHE1.Focus();
+                if (string.IsNullOrEmpty(txtFirstSenderPHE1.Text))
+                {
+                    this.txtFirstSenderPHE1.Focus();
+                }
+                else
+                {
+                    txtPHE1.Focus();
+                }
+               
             }
         }
 
@@ -1519,7 +1549,7 @@ namespace Newborn_Disease_Screening_System.UC
 
         private void txtPHE1_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter&&!string.IsNullOrEmpty(txtPHE1.Text))
             {
                 this.btnSavePHE1.Focus();
             }
@@ -1629,7 +1659,15 @@ namespace Newborn_Disease_Screening_System.UC
         {
             if (e.KeyCode == Keys.Enter)
             {
-                this.txtFirstSenderPHE2.Focus();
+                if (string.IsNullOrEmpty(txtFirstSenderPHE2.Text))
+                {
+                    this.txtFirstSenderPHE2.Focus();
+                }
+                else
+                {
+                    this.txtPHE2_1.Focus();
+                }
+                
             }
         }
 
@@ -1659,7 +1697,7 @@ namespace Newborn_Disease_Screening_System.UC
 
         private void txtPHE2_1_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter&&!string.IsNullOrEmpty(txtPHE2_1.Text))
             {
                 this.txtPHE2_2.Focus();
             }
@@ -1760,7 +1798,15 @@ namespace Newborn_Disease_Screening_System.UC
         {
             if (e.KeyCode == Keys.Enter)
             {
-                this.txtFirstSenderG6PD1.Focus();
+                if (string.IsNullOrEmpty(this.txtFirstSenderG6PD1.Text))
+                {
+                    this.txtFirstSenderG6PD1.Focus();
+                }
+                else
+                {
+                    this.txtG6PD1.Focus();
+                }
+                
             }
         }
 
@@ -1790,7 +1836,7 @@ namespace Newborn_Disease_Screening_System.UC
 
         private void txtG6PD1_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter&&!string.IsNullOrEmpty(txtG6PD1.Text))
             {
                 btnSaveG6PD1.Focus(); 
             }
@@ -1900,7 +1946,15 @@ namespace Newborn_Disease_Screening_System.UC
         {
             if (e.KeyCode == Keys.Enter)
             {
-                this.txtFirstSenderG6PD2.Focus();
+                if (string.IsNullOrEmpty(txtFirstSenderG6PD2.Text))
+                {
+                    this.txtFirstSenderG6PD2.Focus();
+                }
+                else
+                {
+                    this.txtG6PD2_1.Focus();
+                }
+                
             }
         }
 
@@ -1930,7 +1984,7 @@ namespace Newborn_Disease_Screening_System.UC
 
         private void txtG6PD2_1_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter&&!string.IsNullOrEmpty(txtG6PD2_1.Text))
             {
                 this.txtG6PD2_2.Focus();
             }
