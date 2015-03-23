@@ -121,3 +121,4 @@ E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease
 E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn_Disease_Screening_System.UC.UCSecondStatisticsResult.resources
 E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn Disease Screening System.csproj.GenerateResource.Cache
 E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn Disease Screening System.exe.licenses
+E:\zhaoliang\NDSS\Newborn Disease Screening System\obj\x86\Debug\Newborn Disease Screening System.csprojResolveAssemblyReference.cache

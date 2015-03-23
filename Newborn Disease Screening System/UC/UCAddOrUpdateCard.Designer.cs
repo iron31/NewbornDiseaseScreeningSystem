@@ -98,6 +98,11 @@
             this.pcCardInfo = new DevExpress.XtraEditors.PanelControl();
             this.cbReason = new DevExpress.XtraEditors.CheckedComboBoxEdit();
             this.txtGetBloodUserName = new DevExpress.XtraEditors.TextEdit();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.deBirthday.Properties.VistaTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.deBirthday.Properties)).BeginInit();
@@ -444,6 +449,7 @@
             this.txtIllCaseNo.Name = "txtIllCaseNo";
             this.txtIllCaseNo.Size = new System.Drawing.Size(146, 23);
             this.txtIllCaseNo.TabIndex = 4;
+            this.txtIllCaseNo.Visible = false;
             this.txtIllCaseNo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtIllCaseNo_KeyUp);
             // 
             // txtPhoneNo
@@ -498,6 +504,7 @@
             this.txtBedNo.Name = "txtBedNo";
             this.txtBedNo.Size = new System.Drawing.Size(90, 23);
             this.txtBedNo.TabIndex = 5;
+            this.txtBedNo.Visible = false;
             this.txtBedNo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtBedNo_KeyUp);
             // 
             // txtMotherName
@@ -793,8 +800,8 @@
             // 
             // pcCardNo
             // 
-            this.pcCardNo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.pcCardNo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pcCardNo.Controls.Add(this.label29);
             this.pcCardNo.Controls.Add(this.txtBegCardNo);
             this.pcCardNo.Controls.Add(this.label27);
@@ -837,9 +844,14 @@
             // 
             // pcCardInfo
             // 
-            this.pcCardInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.pcCardInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pcCardInfo.Controls.Add(this.label35);
+            this.pcCardInfo.Controls.Add(this.label34);
+            this.pcCardInfo.Controls.Add(this.label33);
+            this.pcCardInfo.Controls.Add(this.label32);
+            this.pcCardInfo.Controls.Add(this.label31);
             this.pcCardInfo.Controls.Add(this.cbReason);
             this.pcCardInfo.Controls.Add(this.txtGetBloodUserName);
             this.pcCardInfo.Controls.Add(this.label1);
@@ -923,6 +935,61 @@
             this.txtGetBloodUserName.Size = new System.Drawing.Size(100, 22);
             this.txtGetBloodUserName.TabIndex = 14;
             this.txtGetBloodUserName.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtGetBloodUserName_KeyUp);
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label31.ForeColor = System.Drawing.Color.Blue;
+            this.label31.Location = new System.Drawing.Point(687, 71);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(14, 14);
+            this.label31.TabIndex = 64;
+            this.label31.Text = "*";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label32.ForeColor = System.Drawing.Color.Blue;
+            this.label32.Location = new System.Drawing.Point(687, 121);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(14, 14);
+            this.label32.TabIndex = 65;
+            this.label32.Text = "*";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label33.ForeColor = System.Drawing.Color.Blue;
+            this.label33.Location = new System.Drawing.Point(970, 123);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(14, 14);
+            this.label33.TabIndex = 66;
+            this.label33.Text = "*";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label34.ForeColor = System.Drawing.Color.Blue;
+            this.label34.Location = new System.Drawing.Point(276, 188);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(14, 14);
+            this.label34.TabIndex = 67;
+            this.label34.Text = "*";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label35.ForeColor = System.Drawing.Color.Blue;
+            this.label35.Location = new System.Drawing.Point(441, 123);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(14, 14);
+            this.label35.TabIndex = 68;
+            this.label35.Text = "*";
             // 
             // UCAddOrUpdateCard
             // 
@@ -1030,5 +1097,10 @@
         private DevExpress.XtraEditors.LabelControl lblCurrentNo;
         private DevExpress.XtraEditors.TextEdit txtGetBloodUserName;
         private DevExpress.XtraEditors.CheckedComboBoxEdit cbReason;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label35;
     }
 }

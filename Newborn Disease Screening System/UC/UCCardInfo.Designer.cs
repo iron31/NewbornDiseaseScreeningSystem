@@ -86,8 +86,8 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnGoBack);
             this.panel1.Controls.Add(this.btnUpdate);
@@ -502,9 +502,9 @@
             // 
             // gridControlCardInfo
             // 
-            this.gridControlCardInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridControlCardInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gridControlCardInfo.Location = new System.Drawing.Point(26, 24);
             this.gridControlCardInfo.MainView = this.gridViewCardInfo;
             this.gridControlCardInfo.Name = "gridControlCardInfo";
@@ -551,7 +551,7 @@
             // Gender
             // 
             this.Gender.Caption = "新生儿性别";
-            this.Gender.FieldName = "GENDER";
+            this.Gender.FieldName = "GENDER_INFO";
             this.Gender.Name = "Gender";
             this.Gender.OptionsColumn.AllowEdit = false;
             this.Gender.Visible = true;

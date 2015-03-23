@@ -123,7 +123,7 @@ namespace Newborn_Disease_Screening_System.UC
                 deGetBloodDate.DateTime = _card.Get_Blood_Date;
                 deReceiveDate.DateTime = _card.Received_Date;
                 txtGetBloodUserName.Text = _card.Get_Blood_User_Name;
-                deSendDate.DateTime = _card.Send_Date;
+                deSendDate.Text = string.IsNullOrEmpty(_card.Send_Date.ToString())?string.Empty:_card.Send_Date.ToString();
                 txtApgar.Text = _card.Apgar;
                 txtFeedingTimes.Text = _card.Feeding_Times;
                 txtPhoneNo.Text = _card.Phone_No;
@@ -815,10 +815,10 @@ namespace Newborn_Disease_Screening_System.UC
             cbQualiFied.SelectedIndex = cbIodine.SelectedIndex = cbGender.SelectedIndex = cbAnamnesis.SelectedIndex = cbReport.SelectedIndex
                 = cbYieldMode.SelectedIndex = cbTransfusion.SelectedIndex = 0;
             txtHealthNo.Text = txtIllCaseNo.Text = txtBedNo.Text = txtMotherName.Text = txtGestationalWeeks.Text = txtGestationalDays.Text
-                                = txtWeight.Text = cbGender.Text = deBirthday.Text = txtGetBloodUserName.Text = cbQualiFied.Text = cbReason.Text
+                                = txtWeight.Text = cbGender.Text = deBirthday.Text =  cbQualiFied.Text = cbReason.Text
                                 = cbYieldMode.Text = txtApgar.Text = cbAnamnesis.Text = txtFeedingTimes.Text
                                 = cbAntibiotics.Text = cbIodine.Text = cbTransfusion.Text = txtPhoneNo.Text = txtAddress.Text = cbReason.Text
-                                = deGetBloodDate.Text = txtCardCode.Text  = string.Empty;
+                                = txtCardCode.Text  = string.Empty;
             if(_flag=="update")
             {
                 lblCurrentNo.Text = string.Empty;
@@ -846,18 +846,18 @@ namespace Newborn_Disease_Screening_System.UC
                 cbOrganization.Focus();
                 return false;
             }
-            if (string.IsNullOrEmpty(this.txtIllCaseNo.Text))
-            {
-                MessageBox.Show("住院号不能为空!", "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                this.txtIllCaseNo.Focus();
-                return false;
-            }
-            if (string.IsNullOrEmpty(this.txtBedNo.Text))
-            {
-                MessageBox.Show("床位号不能为空!", "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                txtBedNo.Focus();
-                return false;
-            }
+            //if (string.IsNullOrEmpty(this.txtIllCaseNo.Text))
+            //{
+            //    MessageBox.Show("住院号不能为空!", "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            //    this.txtIllCaseNo.Focus();
+            //    return false;
+            //}
+            //if (string.IsNullOrEmpty(this.txtBedNo.Text))
+            //{
+            //    MessageBox.Show("床位号不能为空!", "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            //    txtBedNo.Focus();
+            //    return false;
+            //}
             if (string.IsNullOrEmpty(this.txtMotherName.Text))
             {
                 MessageBox.Show("母亲姓名不能为空!", "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);

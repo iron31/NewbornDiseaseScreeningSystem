@@ -45,11 +45,6 @@ namespace Newborn_Disease_Screening_System.Report
             this.xrTableCell6 = new DevExpress.XtraReports.UI.XRTableCell();
             this.cellPHE = new DevExpress.XtraReports.UI.XRTableCell();
             this.cellNormalPHE = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow4 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell13 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell14 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.cellG6PD = new DevExpress.XtraReports.UI.XRTableCell();
-            this.cellNormalG6PD = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTable4 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow7 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell20 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -97,7 +92,7 @@ namespace Newborn_Disease_Screening_System.Report
             this.xrTable3,
             this.xrTable2,
             this.lblTitle});
-            this.Detail.HeightF = 302.5F;
+            this.Detail.HeightF = 320F;
             this.Detail.Name = "Detail";
             this.Detail.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
@@ -109,9 +104,8 @@ namespace Newborn_Disease_Screening_System.Report
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1,
             this.xrTableRow3,
-            this.xrTableRow2,
-            this.xrTableRow4});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(696.9999F, 130.8333F);
+            this.xrTableRow2});
+            this.xrTable1.SizeF = new System.Drawing.SizeF(696.9999F, 98.12497F);
             this.xrTable1.StylePriority.UseTextAlignment = false;
             this.xrTable1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
@@ -127,9 +121,9 @@ namespace Newborn_Disease_Screening_System.Report
             // 
             // xrTableCell1
             // 
-            this.xrTableCell1.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top)
-                        | DevExpress.XtraPrinting.BorderSide.Right)
-                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell1.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell1.Name = "xrTableCell1";
             this.xrTableCell1.StylePriority.UseBorders = false;
             this.xrTableCell1.Text = "…∏≤È≤°÷÷£∫";
@@ -137,8 +131,8 @@ namespace Newborn_Disease_Screening_System.Report
             // 
             // xrTableCell2
             // 
-            this.xrTableCell2.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right)
-                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell2.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell2.Name = "xrTableCell2";
             this.xrTableCell2.StylePriority.UseBorders = false;
             this.xrTableCell2.Text = "ºÏ≤‚œÓƒø";
@@ -146,8 +140,8 @@ namespace Newborn_Disease_Screening_System.Report
             // 
             // xrTableCell4
             // 
-            this.xrTableCell4.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right)
-                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell4.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell4.Name = "xrTableCell4";
             this.xrTableCell4.StylePriority.UseBorders = false;
             this.xrTableCell4.Text = "…∏≤ÈΩ·π˚";
@@ -155,8 +149,8 @@ namespace Newborn_Disease_Screening_System.Report
             // 
             // xrTableCell3
             // 
-            this.xrTableCell3.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right)
-                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell3.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell3.Name = "xrTableCell3";
             this.xrTableCell3.StylePriority.UseBorders = false;
             this.xrTableCell3.Text = "’˝≥£÷µ≤Œøº";
@@ -174,8 +168,8 @@ namespace Newborn_Disease_Screening_System.Report
             // 
             // xrTableCell9
             // 
-            this.xrTableCell9.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)
-                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell9.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell9.Name = "xrTableCell9";
             this.xrTableCell9.StylePriority.UseBorders = false;
             this.xrTableCell9.Text = "œ»ÃÏ–‘º◊µÕ";
@@ -217,8 +211,8 @@ namespace Newborn_Disease_Screening_System.Report
             // 
             // xrTableCell5
             // 
-            this.xrTableCell5.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)
-                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell5.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell5.Name = "xrTableCell5";
             this.xrTableCell5.StylePriority.UseBorders = false;
             this.xrTableCell5.Text = "±Ω±˚Õ™ƒÚ÷¢";
@@ -247,50 +241,6 @@ namespace Newborn_Disease_Screening_System.Report
             this.cellNormalPHE.StylePriority.UseBorders = false;
             this.cellNormalPHE.Text = "cellNormalPHE";
             this.cellNormalPHE.Weight = 0.79608927636173177D;
-            // 
-            // xrTableRow4
-            // 
-            this.xrTableRow4.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell13,
-            this.xrTableCell14,
-            this.cellG6PD,
-            this.cellNormalG6PD});
-            this.xrTableRow4.Name = "xrTableRow4";
-            this.xrTableRow4.Weight = 1D;
-            // 
-            // xrTableCell13
-            // 
-            this.xrTableCell13.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)
-                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell13.Name = "xrTableCell13";
-            this.xrTableCell13.StylePriority.UseBorders = false;
-            this.xrTableCell13.Text = "∆œÃ—Ã«6»ÈÀ·Õ—«‚√∏»±∑¶÷¢";
-            this.xrTableCell13.Weight = 0.861986464777446D;
-            // 
-            // xrTableCell14
-            // 
-            this.xrTableCell14.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)
-                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell14.Name = "xrTableCell14";
-            this.xrTableCell14.StylePriority.UseBorders = false;
-            this.xrTableCell14.Text = "∆œÃ—Ã«6»ÈÀ·Õ—«‚√∏";
-            this.xrTableCell14.Weight = 0.61639636265982578D;
-            // 
-            // cellG6PD
-            // 
-            this.cellG6PD.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.cellG6PD.Name = "cellG6PD";
-            this.cellG6PD.StylePriority.UseBorders = false;
-            this.cellG6PD.Text = "cellG6PD";
-            this.cellG6PD.Weight = 0.72552789620099645D;
-            // 
-            // cellNormalG6PD
-            // 
-            this.cellNormalG6PD.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.cellNormalG6PD.Name = "cellNormalG6PD";
-            this.cellNormalG6PD.StylePriority.UseBorders = false;
-            this.cellNormalG6PD.Text = "cellNormalG6PD";
-            this.cellNormalG6PD.Weight = 0.79608927636173177D;
             // 
             // xrTable4
             // 
@@ -616,11 +566,6 @@ namespace Newborn_Disease_Screening_System.Report
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell6;
         private DevExpress.XtraReports.UI.XRTableCell cellPHE;
         private DevExpress.XtraReports.UI.XRTableCell cellNormalPHE;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow4;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell13;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell14;
-        private DevExpress.XtraReports.UI.XRTableCell cellG6PD;
-        private DevExpress.XtraReports.UI.XRTableCell cellNormalG6PD;
         private DevExpress.XtraReports.UI.XRTable xrTable4;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow7;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell20;

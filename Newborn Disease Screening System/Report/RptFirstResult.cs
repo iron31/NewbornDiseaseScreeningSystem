@@ -52,10 +52,10 @@ namespace Newborn_Disease_Screening_System.Report
                 {
                     cellNormalPHE.Text = "< " + double.Parse(dtparams.Rows[i]["normal_high_value"].ToString()).ToString("0.00") + dtparams.Rows[i]["units"].ToString();
                 }
-                else if (dtparams.Rows[i]["item_name"].ToString() == "G6PD")
-                {
-                    cellNormalG6PD.Text = "> " + double.Parse(dtparams.Rows[i]["normal_low_value"].ToString()).ToString("0.00") + dtparams.Rows[i]["units"].ToString();
-                }
+                //else if (dtparams.Rows[i]["item_name"].ToString() == "G6PD")
+                //{
+                //    cellNormalG6PD.Text = "> " + double.Parse(dtparams.Rows[i]["normal_low_value"].ToString()).ToString("0.00") + dtparams.Rows[i]["units"].ToString();
+                //}
 
             }
             //DataTable dt = new DataTable();
@@ -91,7 +91,7 @@ namespace Newborn_Disease_Screening_System.Report
                 cellSendDate.DataBindings.Add(propertyName, this.DataSource, "SEND_DATE");
                 cellTSH.DataBindings.Add(propertyName, this.DataSource, "TSH");
                 cellPHE.DataBindings.Add(propertyName, this.DataSource, "PHE");
-                cellG6PD.DataBindings.Add(propertyName, this.DataSource, "G6PD");
+                //cellG6PD.DataBindings.Add(propertyName, this.DataSource, "G6PD");
             }
             else if (_dt == null)
             {
@@ -107,7 +107,7 @@ namespace Newborn_Disease_Screening_System.Report
                 cellSendDate.Text = _dr["SEND_DATE"].ToString();
                 cellTSH.Text = _dr["TSH"].ToString();
                 cellPHE.Text = _dr["PHE"].ToString();
-                cellG6PD.Text = _dr["G6PD"].ToString();
+                //cellG6PD.Text = _dr["G6PD"].ToString();
             }
 
         }
